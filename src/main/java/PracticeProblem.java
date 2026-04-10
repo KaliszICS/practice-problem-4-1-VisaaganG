@@ -1,27 +1,36 @@
 public class PracticeProblem {
 
-	public static void main(String args[]) {
 
-	}
+public static String seriesInclusive(int num) {
+    if (num < 1) {
+     return "";
+    }
+    
+    String result;
+    result = "1";
+    int i = 2;
 
-	public static void q1() {
-		//Write question 1 code here
-	}
+    while (i <= num) {
+        result += " " + i;
+        i++;
+    }
 
-	public static void q2() {
-		//Write question 2 code here
-	}
+    return result;
+}
 
-	public static void q3() {
-		//Write question 3 code here
-	}
+public static String seriesExclusive(int num) {
+     String result = "";
+        int i = 0;
 
-	public static void q4() {
-		//Write question 4 code here
-	}
+        while (i < num) {
+            result += i;
+            if (i != num - 1) {
+                result += " ";
+            }
+            i++;
+        }
 
-	public static void q5() {
-		//Write question 5 code here
-	}
+        return result;
+    }
 
 }
